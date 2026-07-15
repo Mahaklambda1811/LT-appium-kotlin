@@ -10,8 +10,8 @@ class AndroidAppAutomation {
 
     @Test
     public fun sampletest() {
-        val username = "mahakgtestmuai"   // set via: $env:LT_USERNAME="..."
-        val accessKey = "LT_V4Eb1ykQatzCej6ewT8VuDzioeM4dC9XPAywhMz40Oz8Az9" // set via: $env:LT_ACCESS_KEY="..."
+        val username = "&&"   // set via: $env:LT_USERNAME="..."
+        val accessKey = "&&" // set via: $env:LT_ACCESS_KEY="..."
 
         val hub = URL("https://${username}:${accessKey}@mobile-hub.lambdatest.com/wd/hub")
 
