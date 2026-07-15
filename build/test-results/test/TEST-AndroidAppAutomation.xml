@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AndroidAppAutomation" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-07-15T08:56:12" hostname="LT-LP-174" time="56.841">
+  <properties/>
+  <testcase name="sampletest()" classname="AndroidAppAutomation" time="56.841"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jul 15, 2026 2:26:38 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

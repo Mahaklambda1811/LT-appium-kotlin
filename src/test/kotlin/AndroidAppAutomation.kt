@@ -10,10 +10,8 @@ class AndroidAppAutomation {
 
     @Test
     public fun sampletest() {
-        val username = System.getenv("LT_USERNAME")    //Add your LambdaTest username here
-        val accessKey = System.getenv("LT_ACCESS_KEY")    //Add your LambdaTest accessKey here
-
-//        var driver: AndroidDriver<MobileElement>? = null
+        val username = "mahakgtestmuai"   // set via: $env:LT_USERNAME="..."
+        val accessKey = "LT_V4Eb1ykQatzCej6ewT8VuDzioeM4dC9XPAywhMz40Oz8Az9" // set via: $env:LT_ACCESS_KEY="..."
 
         val hub = URL("https://${username}:${accessKey}@mobile-hub.lambdatest.com/wd/hub")
 
@@ -24,7 +22,7 @@ class AndroidAppAutomation {
         caps.setCapability("platformVersion", "11")
         caps.setCapability("platformName", "Android")
         caps.setCapability("isRealMobile", true)
-        caps.setCapability("app", "lt://proverbial-android") //Add the app (.apk) url here
+        caps.setCapability("app", "lt://APP1016020861779271846205213") //Add the app (.apk) url here
         caps.setCapability("deviceOrientation", "PORTRAIT")
         caps.setCapability("build", "Kotlin Vanilla - Android")
         caps.setCapability("name", "Sample Test Kotlin")
@@ -59,10 +57,6 @@ class AndroidAppAutomation {
         geo.click()
         Thread.sleep(5000)
 
-//        val el3: MobileElement =
-//            app.findElementByAccessibilityId("Home") as MobileElement
-//        el3.click()
-
         app.navigate().back()
         Thread.sleep(2000)
 
@@ -73,10 +67,7 @@ class AndroidAppAutomation {
 
         app.navigate().back()
 
-
-//        if (app != null) {
-            app.quit()
-//        };
+        app.quit()
 
     }
 }
